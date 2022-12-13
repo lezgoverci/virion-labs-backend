@@ -10,6 +10,7 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@strapi/plugin-graphql": "^4.5.3",
     "@strapi/plugin-i18n": "4.5.3",
     "@strapi/plugin-users-permissions": "4.5.3",
     "@strapi/strapi": "4.5.3",
@@ -25,5 +26,9 @@
     "node": ">=14.19.1 <=18.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "resolutions": {
+    "graphql": "^15.6.1",
+    "**/graphql": "^15.6.1"
+  }
 }
