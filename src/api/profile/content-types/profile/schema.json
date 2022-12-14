@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profiles",
+  "info": {
+    "singularName": "profile",
+    "pluralName": "profiles",
+    "displayName": "profile",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "country": {
+      "type": "string"
+    },
+    "photo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "telegram": {
+      "type": "string"
+    },
+    "nickname": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "nationality": {
+      "type": "string"
+    },
+    "discord": {
+      "type": "string"
+    },
+    "whatsapp": {
+      "type": "string"
+    },
+    "intern": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::intern.intern",
+      "mappedBy": "profile"
+    }
+  }
+}

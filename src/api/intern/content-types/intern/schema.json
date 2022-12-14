@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "interns",
+  "info": {
+    "singularName": "intern",
+    "pluralName": "interns",
+    "displayName": "intern",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "profile": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::profile.profile",
+      "inversedBy": "intern"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Freelance",
+        "Full-time Web3",
+        "Full-time Web2",
+        "Student"
+      ]
+    },
+    "interests": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::skill.skill"
+    }
+  }
+}

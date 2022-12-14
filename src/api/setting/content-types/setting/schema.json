@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "settings",
+  "info": {
+    "singularName": "setting",
+    "pluralName": "settings",
+    "displayName": "setting"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "market_skill": {
+      "type": "boolean"
+    },
+    "receive_email": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "talents",
+  "info": {
+    "singularName": "talent",
+    "pluralName": "talents",
+    "displayName": "talent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "profile": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::profile.profile"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "freelance",
+        "full-time",
+        "student",
+        "intern"
+      ]
+    },
+    "jobs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::job.job"
+    },
+    "companies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::company.company"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project"
+    },
+    "experience": {
+      "type": "integer"
+    },
+    "salary": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "role_types",
+  "info": {
+    "singularName": "role-type",
+    "pluralName": "role-types",
+    "displayName": "role-type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
