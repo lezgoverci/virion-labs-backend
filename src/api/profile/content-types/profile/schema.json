@@ -12,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "user": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
-    },
     "country": {
       "type": "string"
     },
@@ -60,12 +55,6 @@
     },
     "whatsapp": {
       "type": "string"
-    },
-    "intern": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::intern.intern",
-      "mappedBy": "profile"
     }
   }
 }

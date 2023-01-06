@@ -12,12 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "profile": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::profile.profile",
-      "inversedBy": "intern"
-    },
     "status": {
       "type": "enumeration",
       "enum": [
