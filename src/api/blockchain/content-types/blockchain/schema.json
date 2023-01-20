@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blockchains",
+  "info": {
+    "singularName": "blockchain",
+    "pluralName": "blockchains",
+    "displayName": "blockchain"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "nft_project": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::nft-project.nft-project",
+      "inversedBy": "blockchain"
+    }
+  }
+}

@@ -8,7 +8,7 @@ module.exports = ({ env }) => ({
       config: {
         provider: 'sendmail',
         settings: {
-          defaultFrom: 'no-reply@virionlabs.io',
+          defaultFrom: 'verci@virionlabs.io',
           defaultReplyTo: 'verci@virionlabs.io',
         },
       },

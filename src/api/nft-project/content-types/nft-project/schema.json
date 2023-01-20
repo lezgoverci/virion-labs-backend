@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nft_projects",
+  "info": {
+    "singularName": "nft-project",
+    "pluralName": "nft-projects",
+    "displayName": "nft-project"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "blockchain": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::blockchain.blockchain",
+      "inversedBy": "nft_project"
+    },
+    "description": {
+      "type": "text"
+    },
+    "supply": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "discord": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "project_founders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project-founder.project-founder",
+      "mappedBy": "nft_project"
+    }
+  }
+}
