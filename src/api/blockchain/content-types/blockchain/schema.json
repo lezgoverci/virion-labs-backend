@@ -17,11 +17,11 @@
     "currency": {
       "type": "string"
     },
-    "nft_project": {
+    "nft_projects": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::nft-project.nft-project",
-      "inversedBy": "blockchain"
+      "mappedBy": "blockchain"
     }
   }
 }

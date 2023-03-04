@@ -4,7 +4,8 @@
   "info": {
     "singularName": "nft-project",
     "pluralName": "nft-projects",
-    "displayName": "nft-project"
+    "displayName": "nft-project",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,9 +17,9 @@
     },
     "blockchain": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::blockchain.blockchain",
-      "inversedBy": "nft_project"
+      "inversedBy": "nft_projects"
     },
     "description": {
       "type": "text"
@@ -46,6 +47,22 @@
       "relation": "oneToMany",
       "target": "api::project-founder.project-founder",
       "mappedBy": "nft_project"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "art",
+        "gaming",
+        "membership",
+        "pfp",
+        "photography"
+      ]
+    },
+    "price": {
+      "type": "string"
+    },
+    "drop_date": {
+      "type": "datetime"
     }
   }
 }
